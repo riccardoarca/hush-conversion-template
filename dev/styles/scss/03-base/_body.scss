@@ -1,0 +1,32 @@
+$color--main: #3a4932;
+$color--border: lighten($color--main, 20%);
+$white : #ffffff;
+
+html {
+   scroll-behavior: smooth;
+   font-size: 100%;
+
+   @media only screen and (min-width: 1600px) {
+      font-size: 90%;
+   }
+
+   @media only screen and (min-width: 1200px) {
+      font-size: 90%;
+   }
+
+   &.modal-open {
+      overflow-y: hidden;
+      ;
+   }
+}
+
+body {
+   font-style: normal;
+   opacity: 0;
+   background-color: $white;
+   transition: opacity 1s ease;
+
+   &.active {
+      opacity: 1;
+   }
+}
